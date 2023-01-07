@@ -76,9 +76,27 @@ h3 {
 
 .nav_bar {
     background-color: #87805E;
-    position:fixed;
+    position:sticky;
     width: 100%;
     height: 35px;
+    display: flex;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+.item {
+    padding-left: 20px;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    
+}
+
+.item:hover {
+    text-decoration: none;
+    color: rgb(165, 122, 106);
 }
 
 hr {
