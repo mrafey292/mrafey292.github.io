@@ -2,96 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Rafey</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'igor';
+            src: url(fonts/IGOR-BoldItalic.ttf);
+        }
+        @font-face {
+            font-family: 'west';
+            src: url(fonts/fontspring-demo-west-condensed.otf);
+        }
+        
+        body {
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hello {
+            font-family: 'Courier New';
+            font-weight: 600;
+            font-size: 3vh;
+            color: #393634;
+            margin: 0;
+        }
+
+        .hero-container {
+            position: absolute;
+            left: 50%;
+            bottom: 20%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+        }
+
+        .rafey {
+            font-family: 'igor';
+            font-size: 16vh;
+            color: #252424;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            max-width: 600px;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 2%;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: #252424;
+            padding: 10px 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            margin-left: 5%;
+            padding-right: 5%;
+        }
+
+        .nav-links a {
+            font-family: 'Courier New';
+            font-size: 12px;
+            font-weight: 500;
+            color: #dd9eab;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .logo {
+            font-family: 'igor';
+            font-size: 2.5vh;
+            color: #dd9eab;
+            text-transform: uppercase;
+            margin-left: 48%; 
+        }
+
+        .intro-text {
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 7%;
+            color: #252424;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            border-right: 2px solid #252424;
+            display: inline-block;
+            animation: typing 3s steps(20) forwards, blink 0.5s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 37%; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+    </style>
 </head>
 <body>
-    <div class="box_1">
-        <div class="nav_bar">
-            <li class="nav_bar_item">
-                <a href="#" class="item">Home</a>
-            </li>
-            <li class="nav_bar_item">
-                <a href="#" class="item">About</a>
-            </li>
-    
-        </div>
-        <div class="main_txt">
-            <h1>I'm Rafey</h1>
-            <p style="margin: 0%;">a student and developer</p>
-        </div>
-        <img src="" alt="">
-    </div>
-    <div class="box_2">
-        <div class="box2_txt">
-            <div class="intro">
-                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922719.png" alt="my profile picture" width="175px", height="175px" style="padding-top: 35px;">
-                <h3>Hi.</h3>
-                <p>
-                    I am a student currently studying in grade 12 in Islamabad, Pakistan. I like to code in my free time. I am also a maths and physics enthusiast.
-                </p>
-            </div>
-            <hr>
-            <div class="hobbies">
-                <h3>My Hobbies.</h3>
-                <div class="hobbies_img">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4711/4711903.png" alt="a football", width="150px", height="150px">
-                </div>
-                <div class="hobbies_txt">
-                    <p>
-                        I love playing chess and reading books. I also play some other games like cricket, football, table tennis and badminton etc. and pc games like Call of Duty, Counter Strike and Minecraft.
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="skills">
-                <h3>My Skills.</h3>
-                <div class="skills_img">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2444/2444277.png" alt="", width="150px", height="150px">
-                </div>
-                <div class="skills_txt">
-                    <p>
-                        I can:
-                        <ul>
-                            <li>Write and design websites.</li>
-                            <li>Write articles and blogs for you on any given topic.</li>
-                            <li>Proofread your documents.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="contact_me">
-                <h3>Get In Touch.</h3>
-                <p>
-                    I am currently available for freelance work. You can contact me if you want to :)
-                </p>
-                <a class="btn" href="mailto:mrafey292@email.com">
-                    CONTACT ME
-                </a>
-            </div>
-        </div>
 
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="logo">rafey</div>
+    </nav>
+    
 
+    <div class="hero-container">
+        <p class="intro-text" id="intro">HELLO THERE.....................I'M</p>
+        <p class="rafey">RAFEY, THE.... STUDENT.</p>
     </div>
-    <div class="box_3">
-        <a class="footer-link" href="https://www.instagram.com/m_rafey292/">Instagram</a>
-        <a class="footer-link" href="https://twitter.com/mrafey292">Twitter</a>
-        <p class="copyright">© 2023 Muhammad Rafey.</p>
-    </div>
-    
-    
+
+    <img src="images/igor.png" alt="">
+
 </body>
 </html>

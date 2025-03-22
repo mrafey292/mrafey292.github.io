@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Muhammad Rafey</title>
+
+    <style>
+        @font-face {
+            font-family: 'igor';
+            src: url(fonts/IGOR-BoldItalic.ttf);
+        }
+        @font-face {
+            font-family: 'typewriter';
+            src: url(fonts/TypewriterPress-Regular.ttf);
+        }
+        
+        body {
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            color: #252424;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: absolute;
+            top: 2%;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: #252424;
+            padding: 10px 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            margin-left: 5%;
+            padding-right: 5%;
+        }
+
+        .nav-links a {
+            font-family: 'Courier New';
+            font-size: 12px;
+            font-weight: 500;
+            color: #dd9eab;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .logo {
+            font-family: 'igor';
+            font-size: 2.5vh;
+            color: #dd9eab;
+            text-transform: uppercase;
+            margin-left: 48%; 
+        }
+
+        /* Contact Section */
+        .contact-container {
+            text-align: center;
+            width: 60%;
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(37, 36, 36, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        .contact-title {
+            font-family: 'igor';
+            font-size: 6vh;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            color: #dd9eab;
+        }
+
+        .contact-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+
+        /* Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 90%;
+            max-width: 600px;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Courier New', monospace;
+            background-color: #dd9eab;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .contact-form button {
+            background-color: #dd9eab;
+            color: #252424;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .contact-form button:hover {
+            background-color: #ffffff;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background: #252424;
+            color: #dd9eab;
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #dd9eab;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="logo">rafey</div>
+    </nav>
+
+    <div class="contact-container">
+        <h1 class="contact-title">Get in Touch</h1>
+        <p class="contact-text">
+            Have a question or want to work together? As Tyler would say, "Call me if you get lost!".
+        </p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Muhammad Rafey | <a href="https://www.linkedin.com/in/muhammad-rafey-4110a0205/">LinkedIn</a> | <a href="https://github.com/mrafey292">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
